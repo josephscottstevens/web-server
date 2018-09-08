@@ -6,7 +6,7 @@
 )
 
 (defroutes app
-  (GET "/" [] (resp/redirect "/index.html"))
+  (GET "/" [] (resp/file-response (str "resources/public/index.html")))
   (GET "/test" [] "<h1>test</h1>")
   (route/resources "/")
   (route/not-found "<h1>Page not found</h1>")
