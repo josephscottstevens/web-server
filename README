@@ -3,3 +3,6 @@
 
 ## browser to
   http://localhost:3000/
+
+## to compile
+  elm make root\Main.elm
